@@ -1,4 +1,4 @@
-package pickacard;
+package usma.qadri.s991395853;
 
 /**
  * A class that models playing card Objects. Cards have 
@@ -11,8 +11,8 @@ package pickacard;
  * @author Paul Bonenfant
  * @author Usma Qadri 991395853 
  * @date 5/25/2021
- * @version 1.1 
- * Changes made: updated javadoc with author, date and version comments. Project properties changed to JDK 15 vs JDK 11.
+ * @version 1.2 
+ * Changes made: renamed package to usma.qadri.s991395853
  *
  */
 public class Card {

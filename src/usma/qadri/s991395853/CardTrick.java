@@ -1,4 +1,4 @@
-package pickacard;
+package usma.qadri.s991395853;
 
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects and then asks the user to pick a card and
@@ -8,8 +8,8 @@ package pickacard;
  * @author Paul Bonenfant
  * @author Usma Qadri 991395853 
  * @date 5/25/2021
- * @version 1.1 
- * Changes made: updated javadoc with author, date and version comments
+ * @version 1.2 
+ * Changes made: renamed package to usma.qadri.s991395853
  */
 public class CardTrick {
 
