@@ -11,8 +11,9 @@ package usma.qadri.s991395853;
  * @author Paul Bonenfant
  * @author Usma Qadri 991395853 
  * @date 5/25/2021
- * @version 1.2 
- * Changes made: renamed package to usma.qadri.s991395853
+ * @version 1.3 
+ * Changes made: changed project library from JDK 16 to JDK 15. Created/updated
+ * .gitignore file
  *
  */
 public class Card {
