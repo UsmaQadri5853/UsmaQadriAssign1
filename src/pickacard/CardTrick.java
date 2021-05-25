@@ -6,6 +6,10 @@ package pickacard;
  *
  * @author dancye
  * @author Paul Bonenfant
+ * @author Usma Qadri 991395853 
+ * @date 5/25/2021
+ * @version 1.1 
+ * Changes made: updated javadoc with author, date and version comments
  */
 public class CardTrick {
 
