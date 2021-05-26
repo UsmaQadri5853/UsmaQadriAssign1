@@ -10,9 +10,11 @@ package usma.qadri.s991395853;
  * @author dancye
  * @author Paul Bonenfant
  * @author Usma Qadri 991395853 
- * @date 5/25/2021
- * @version 1.4 
- * Changes made: added readme.md file
+ * @date 5/26/2021
+ * @version 1.5 
+ * Changes made: added setValue method in card.java. created algorithm 
+ * to randomly select a cardValue from 1-13 and select a random suit from the 
+ * SUITS array
  *
  */
 public class Card {
@@ -34,7 +36,10 @@ public class Card {
     public void setSuit(String suit) {
         this.suit = suit;
     }
-   
-   
+
+    public void setValue(int value) {
+        this.value = value;
+    }
+  
     
 }

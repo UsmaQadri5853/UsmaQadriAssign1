@@ -7,9 +7,11 @@ package usma.qadri.s991395853;
  * @author dancye
  * @author Paul Bonenfant
  * @author Usma Qadri 991395853 
- * @date 5/25/2021
- * @version 1.4
- * Changes made: added readme.md 
+ * @date 5/26/2021
+ * @version 1.5
+ * Changes made: added setValue method in card.java. created algorithm 
+ * to randomly select a cardValue from 1-13 and select a random suit from the 
+ * SUITS array
  */
 public class CardTrick {
 
@@ -19,10 +21,13 @@ public class CardTrick {
 
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
-            //c.setValue(insert call to random number generator here)
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+            int min = 1; 
+            int max = 13; 
+            c.setValue ((int)(Math.random() * ((max-min) + 1)) + min);
+            c.setSuit (Card.SUITS[(int) Math.floor(Math.random() * Card.SUITS.length)]);
+                          
         }
-
+        
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
