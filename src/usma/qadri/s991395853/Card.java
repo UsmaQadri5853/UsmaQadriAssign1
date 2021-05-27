@@ -11,10 +11,10 @@ package usma.qadri.s991395853;
  * @author Paul Bonenfant
  * @author Usma Qadri 991395853 
  * @date 5/27/2021
- * @version 1.7 
- * Changes made: added magicHand[i]=c; to save cards in the magicHand array 
- * Includes a test (commented out) to see the random cards in the magicHand array
- * getValue() method added in Card.java
+ * @version 1.8
+ * Changes made: Added code to enable the CardTrick class to ask user for the the value and suit of a card. It then compares this information 
+ * with the cards in the hand. Code to check hand and playerCard included, but commented out. Program now prints whether the users card
+ * is in the hand or not.
  */
 public class Card {
 

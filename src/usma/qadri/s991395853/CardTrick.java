@@ -10,10 +10,11 @@ import java.util.Scanner;
  * @author Paul Bonenfant
  * @author Usma Qadri 991395853 
  * @date 5/27/2021
- * @version 1.7
- * Changes made: added magicHand[i]=c; to save cards in the magicHand array 
- * Includes a test (commented out) to see the random cards in the magicHand array
- * getValue() method added in Card.java
+ * @version 1.8
+ * Changes made: Added code to enable the CardTrick class to ask user for the the value and suit of a card. It then compares this information 
+ * with the cards in the hand. Code to check hand and playerCard included, but commented out. Program now prints whether the users card
+ * is in the hand or not.
+ * 
  */
 public class CardTrick {
 
@@ -30,13 +31,13 @@ public class CardTrick {
             magicHand[i] = c;     
         }
         
-        /* Used to test if values are being stored in the magicHand array
+        /*Used to test if values are being stored in the magicHand array. Displays the hand on the console
         for(int i =0; i<magicHand.length; i++){
-           // int studentNumber = i + 1;
-              System.out.println("The card is the " + magicHand[i].getValue() + " of " + magicHand[i].getSuit());     
+           System.out.println("The card is the " + magicHand[i].getValue() + " of " + magicHand[i].getSuit());     
         }
-        */
-              
+       */
+        
+        
         //create a card based on user input 
         Card playerCard = new Card(); 
         Scanner input = new Scanner(System.in);
@@ -47,10 +48,24 @@ public class CardTrick {
         System.out.println("What is the suit of the card (Hearts, Diamonds, Spades, or Clubs?)");
         playerCard.setSuit(input.next()); 
         
+        /* This is to test assignment of value and suit for the playerCard
+        System.out.println("Your card is the " + playerCard.getValue() + " of " + playerCard.getSuit());
+        */
+        
+        //takes the value and suit of playerCard and compares it to value and suit of magicHand
+        //prints statements if card was found in hand of if it was not found in the hand
+        boolean wasCardFound = false;
+        for (int i = 0; i < magicHand.length; i++) {
+            if(playerCard.getValue()==magicHand[i].getValue() && playerCard.getSuit().equals(magicHand[i].getSuit())){
+                wasCardFound = true;
+                System.out.println("Your card was in the hand");
+                break;
+               }              
+        } 
+        if(wasCardFound == false) {
+            System.out.println("Your card was not in the hand");
+        }
        
-        //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
-        //Then report the result here
     }
 
 }
