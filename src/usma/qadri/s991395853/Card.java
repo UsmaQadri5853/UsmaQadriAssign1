@@ -10,12 +10,11 @@ package usma.qadri.s991395853;
  * @author dancye
  * @author Paul Bonenfant
  * @author Usma Qadri 991395853 
- * @date 5/26/2021
- * @version 1.5 
- * Changes made: added setValue method in card.java. created algorithm 
- * to randomly select a cardValue from 1-13 and select a random suit from the 
- * SUITS array
- *
+ * @date 5/27/2021
+ * @version 1.6 
+ * Changes made: added a print statement in CardTrick. Added scanner class to 
+ * take user input to create a new card (currently incomplete) 
+ * Issues: Prints null for each card.
  */
 public class Card {
 
