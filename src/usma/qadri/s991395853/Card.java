@@ -11,10 +11,10 @@ package usma.qadri.s991395853;
  * @author Paul Bonenfant
  * @author Usma Qadri 991395853 
  * @date 5/27/2021
- * @version 1.6 
- * Changes made: added a print statement in CardTrick. Added scanner class to 
- * take user input to create a new card (currently incomplete) 
- * Issues: Prints null for each card.
+ * @version 1.7 
+ * Changes made: added magicHand[i]=c; to save cards in the magicHand array 
+ * Includes a test (commented out) to see the random cards in the magicHand array
+ * getValue() method added in Card.java
  */
 public class Card {
 
@@ -39,6 +39,11 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
+
+    public int getValue() {
+        return value;
+    }
+    
   
     
 }
