@@ -11,10 +11,10 @@ package usma.qadri.s991395853;
  * @author Paul Bonenfant
  * @author Usma Qadri 991395853 
  * @date 5/27/2021
- * @version version 1.9
- * Changes made: Added luckyCard object and updated code to now compare luckyCard with magicHand 
- * Commented out code that asked user to create a card 
- * Updated Win/Lose Statements
+ * @version 2.0
+ * Changes made:
+ * Removed testing/debugging codes
+ * Cleaned up and fixed typos
  */
 public class Card {
 

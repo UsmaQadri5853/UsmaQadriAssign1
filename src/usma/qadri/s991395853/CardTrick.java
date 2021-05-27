@@ -10,10 +10,10 @@ import java.util.Scanner;
  * @author Paul Bonenfant
  * @author Usma Qadri 991395853 
  * @date 5/27/2021
- * @version 1.9
- * Changes made: Added luckyCard object and updated code to now compare luckyCard with magicHand 
- * Commented out code that asked user to create a card 
- * Updated Win/Lose Statements
+ * @version 2.0
+ * Changes made:
+ * Removed testing/debugging codes
+ * Cleaned up and fixed typos
  */
 public class CardTrick {
 
@@ -29,14 +29,7 @@ public class CardTrick {
             c.setSuit (Card.SUITS[(int) Math.floor(Math.random() * Card.SUITS.length)]);
             magicHand[i] = c;     
         }
-        
-        /*
-        //Used to test if values are being stored in the magicHand array. Displays the hand on the console
-        for(int i =0; i<magicHand.length; i++){
-           System.out.println("The card is the " + magicHand[i].getValue() + " of " + magicHand[i].getSuit());     
-        }
-        */
-       
+               
         //done in GitHub
         Card luckyCard = new Card();
         luckyCard.setValue(1);
@@ -52,25 +45,20 @@ public class CardTrick {
         //take user input and assign a suit to the player card
         System.out.println("What is the suit of the card (Hearts, Diamonds, Spades, or Clubs?)");
         playerCard.setSuit(input.next()); 
-        
-        /* 
-        //This is to test assignment of value and suit for the playerCard
-        System.out.println("Your card is the " + playerCard.getValue() + " of " + playerCard.getSuit());
         */
-       
-        //takes the value and suit of playerCard and compares it to value and suit of magicHand
-        //prints statements if card was found in hand of if it was not found in the hand
-        
+               
+        //takes the value and suit of luckyCard and compares it to value and suit of magicHand
+        //prints statements if card was found in hand or if it was not found in the hand
         boolean wasCardFound = false;
         for (int i = 0; i < magicHand.length; i++) {
             if(luckyCard.getValue()==magicHand[i].getValue() && luckyCard.getSuit().equals(magicHand[i].getSuit())){
                 wasCardFound = true;
-                System.out.println("Congrats! You win, your card was in the hand");
+                System.out.println("Congrats! You win, your card was in the hand.");
                 break;
                }              
         } 
         if(wasCardFound == false) {
-            System.out.println("Sorry! You lose, your card was not in the hand");
+            System.out.println("Sorry! You lose, your card was not in the hand.");
         }
   
     }
