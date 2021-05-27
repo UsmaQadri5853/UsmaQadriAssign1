@@ -11,10 +11,10 @@ package usma.qadri.s991395853;
  * @author Paul Bonenfant
  * @author Usma Qadri 991395853 
  * @date 5/27/2021
- * @version 1.8
- * Changes made: Added code to enable the CardTrick class to ask user for the the value and suit of a card. It then compares this information 
- * with the cards in the hand. Code to check hand and playerCard included, but commented out. Program now prints whether the users card
- * is in the hand or not.
+ * @version version 1.9
+ * Changes made: Added luckyCard object and updated code to now compare luckyCard with magicHand 
+ * Commented out code that asked user to create a card 
+ * Updated Win/Lose Statements
  */
 public class Card {
 
