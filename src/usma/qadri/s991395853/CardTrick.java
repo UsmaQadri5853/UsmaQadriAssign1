@@ -37,7 +37,11 @@ public class CardTrick {
         }
        */
         
+        Card luckyCard = new Card();
+        luckyCard.setValue(1);
+        luckyCard.setSuit("Spades");
         
+        /*
         //create a card based on user input 
         Card playerCard = new Card(); 
         Scanner input = new Scanner(System.in);
@@ -51,7 +55,7 @@ public class CardTrick {
         /* This is to test assignment of value and suit for the playerCard
         System.out.println("Your card is the " + playerCard.getValue() + " of " + playerCard.getSuit());
         */
-        
+       
         //takes the value and suit of playerCard and compares it to value and suit of magicHand
         //prints statements if card was found in hand of if it was not found in the hand
         boolean wasCardFound = false;
@@ -66,6 +70,8 @@ public class CardTrick {
             System.out.println("Your card was not in the hand");
         }
        
+        
+        
     }
 
 }
