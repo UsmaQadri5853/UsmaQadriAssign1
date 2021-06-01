@@ -10,11 +10,15 @@ package usma.qadri.s991395853;
  * @author dancye
  * @author Paul Bonenfant
  * @author Usma Qadri 991395853 
- * @date 5/27/2021
- * @version 2.0
+ * @date 5/31/2021
+ * @version 2.1
  * Changes made:
- * Removed testing/debugging codes
- * Cleaned up and fixed typos
+ *Changes made: These changes were made after the assignment was
+ * originally submitted. Revisions made related to step 12. I changed the code
+ * so it asks the user to input a numerical value (int) to represent the suits
+ * as opposed to a string, as requested by the Professor in class on 5/31/21. It
+ * now also accounts for incorrect user inputs (incorrect values inputted for
+ * card Value and card Suit)
  */
 public class Card {
 
